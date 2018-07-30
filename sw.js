@@ -1,4 +1,4 @@
-var cacheName = "Adithya";
+var cacheName = "Adithyav2";
 
 var cacheFiles = [
     '/',
