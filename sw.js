@@ -19,7 +19,7 @@ var cacheFiles = [
     'https://www.adithyabhat.com/static/media/mountain.f34ad748.jpeg',
     'https://www.adithyabhat.com/static/media/contact.797f50ca.png',
     '/css/animate.css',
-    'https://www.adithyabhat.com/static/media/AdithyaNR-resume.c861eadb.pdf',
+    'https://www.adithyabhat.com/static/media/AdithyaNR-resume.84dc9990.pdf',
     'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
     'https://use.fontawesome.com/releases/v5.1.0/css/all.css',
     'https://www.adithyabhat.com/static/css/main.f9ea9f6d.css',
