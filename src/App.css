@@ -229,11 +229,11 @@ html{
 }
 
 .thumbnail{
-  margin-top: 10px;
   border:0 !important;
   border-radius: 8px;
-  padding: 10px;
-  height:260px;
+  padding: 0;
+  padding-bottom: 10px;
+  height:auto;
   box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
   background: url('./assets/bg.png');
   overflow: hidden;
@@ -420,9 +420,6 @@ textarea{
   .footer {
     padding:20px 10px 5px!important;
   }
-  .thumbnail{
-    height:auto;
-  }
 }
 
 @media only screen and (min-width:360px) and (max-width:375px){
@@ -461,9 +458,6 @@ textarea{
   .fa-chevron-down{
     display: block;
     margin:10vh auto 0 !important;  
-  }
-  .thumbnail{
-    height:auto;
   }
   .about{
     padding-bottom:20px;
@@ -568,9 +562,6 @@ textarea{
     font-size: 3.2em;
     text-align: center;
   }
-  .thumbnail{
-    height:auto;
-  }
   .intro-p{
     margin: 10px auto 0;
     font-size: 16px;
@@ -640,9 +631,6 @@ textarea{
     background: linear-gradient(rgba(255,255,255,0..07),rgba(255,255,255,0.07)),url('./assets/bgmain.png');
     height: 100%;
   }
-  .thumbnail{
-    height:auto;
-  }
   .navbar{
     padding: 10px 0;
   }
@@ -700,9 +688,6 @@ textarea{
   .resume{
     margin-bottom: 20px !important;
   }
-  .thumbnail{
-    height:auto;
-  }
   .workp{
     font-size: 16px;
   }
@@ -727,9 +712,6 @@ textarea{
     background-color:#02b3e4 !important;
     width: 7px;
     height: 7px;
-  }
-  .thumbnail{
-    height:auto;
   }
   .navbar-collapse{
     background: #161743cc;
@@ -822,9 +804,6 @@ textarea{
 @media only screen and (min-width:768px) and (max-width:992px){
   .navbar-brand{
     font-size:3.2em;
-  }
-  .thumbnail{
-    height:auto;
   }
   .navbar-default .navbar-toggle .icon-bar{
     background-color:#02b3e4 !important;
@@ -1004,7 +983,6 @@ textarea{
   }
   .thumbnail{
     padding-bottom: 20px;
-    height:280px;
   }
   .workh{
     font-size: 21px;
@@ -1081,27 +1059,6 @@ textarea{
     margin:10vh auto 0;
     width:90%;
   }
-  .thumbnail{
-    height:300px;
-    padding:10px 0;
-  }
-}
-
-@media only screen and (min-width:1500px) and (max-width:1720px){
-  .thumbnail{
-    height: 310px;
-  }
-}
-@media only screen and (min-width:1721px) and (max-width:1800px){
-  .thumbnail{
-    height: 310px;
-  }
-}
-
-@media only screen and (min-width:1801px) and (max-width:1919px){
-  .thumbnail{
-    height: 325px;
-  }
 }
 
 @media only screen and (min-width:1920px) and (max-width:2559px){
@@ -1123,9 +1080,6 @@ textarea{
   }
   .webdesigner{
     margin:20% auto 45px !important;
-  }
-  .thumbnail{
-    height:330px;
   }
 }
 
@@ -1167,9 +1121,6 @@ textarea{
   }
   .footer a{
     font-size: 1.2em;
-  }
-  .thumbnail{
-    height:490px;
   }
 }
 
