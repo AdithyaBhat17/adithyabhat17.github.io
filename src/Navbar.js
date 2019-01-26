@@ -6,7 +6,7 @@ class Navbar extends Component {
   render() {
     const { selected } = this.props;
     return (         
-        <nav className="navbar container navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar container navbar-expand-lg navbar-light">
             <Link className="navbar-brand" to="/">
                 <img src={logo} alt="logo"/>
             </Link>
