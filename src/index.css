@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+  display: none
+}
+
 body {
   color: #444;
   margin: 0;
   padding: 0;
+  /* cursor: url('../src/assets/cursor.png'), auto; */
   font-size: 16px;
   font-display: swap;
   font-family: "CircularStd" !important;
@@ -60,6 +65,7 @@ img{
 
 a{
   color: #434aae;
+  /* cursor: url('../src/assets/pointer.png'), auto; */
 }
 
 .hero-tag{
