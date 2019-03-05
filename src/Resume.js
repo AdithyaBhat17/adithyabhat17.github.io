@@ -58,6 +58,13 @@ let projects = [
 
 let experience = [
     {
+        role: 'Intern',
+        company: 'Betsol',
+        date: 'January 2019 - Present',
+        url: 'https://betsol.com',
+        workdone: 'Working on redesigning the admin dashboard for the sales team of Zmanda, Betsol.'
+    },
+    {
         role: 'Freelance Web Developer',
         company: 'GrandMentor LLC',
         date: 'June 2018 - August 2018',
