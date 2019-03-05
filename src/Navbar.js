@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './assets/adithya1.png';
 import { Link } from 'react-router-dom';
 
-class Navbar extends Component {
-  render() {
-    const { selected } = this.props;
+const Navbar = ({selected}) => {
     return (         
         <nav className="navbar container navbar-expand-lg navbar-light">
             <Link className="navbar-brand" to="/">
@@ -33,7 +31,6 @@ class Navbar extends Component {
             </div>
         </nav>
     );
-  }
 }
 
 export default Navbar;
