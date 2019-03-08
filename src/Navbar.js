@@ -21,10 +21,13 @@ const Navbar = ({selected}) => {
                     <a href="https://medium.com/adithya-nr" style={{color: '#444'}} target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/work" style={selected === 3 ? {textDecoration:'line-through',color:'#000'} : {color: '#444'}}>Work</Link>
+                    <Link to="/skills" style={selected === 3 ? {textDecoration:'line-through',color:'#000'} : {color: '#444'}} className="nav-link">Skills</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/contact" style={selected === 4 ? {textDecoration:'line-through',color:'#000'} : {color: '#444'}}>Contact</Link>
+                    <Link className="nav-link" to="/work" style={selected === 4 ? {textDecoration:'line-through',color:'#000'} : {color: '#444'}}>Work</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/contact" style={selected === 5 ? {textDecoration:'line-through',color:'#000'} : {color: '#444'}}>Contact</Link>
                 </li>
                 
                 </ul>

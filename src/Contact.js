@@ -30,7 +30,7 @@ export default class Contact extends React.Component{
                     <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js?v=1531493681238" defer>
                     </script>
                 </Helmet>
-                <Navbar selected={4}/>
+                <Navbar selected={5}/>
                 <div className="container animated fadeIn">
                     <div className="row">
                         <div className="col-lg-6 col-sm-12">

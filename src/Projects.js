@@ -25,7 +25,7 @@ class Projects extends Component {
             <Helmet>
                 <title>Work | Adithya NR</title>
             </Helmet>
-            <Navbar selected={3}/>
+            <Navbar selected={4}/>
             <br/>
             <div className="container animated fadeIn">
                 <h1 className="contact-h1 work-h1">My Work</h1> <br/>

@@ -30,7 +30,7 @@ export default class Work extends React.Component{
                 <Helmet>
                     <title>Work | Adithya NR</title>
                 </Helmet>
-                <Navbar selected={3} />
+                <Navbar selected={4} />
                 <br/>
                 <div className="container">
                     {projects && projects.map((project,index,array) => project.path === this.props.match.params.path && (
