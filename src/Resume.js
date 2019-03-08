@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
 let education = [
     {
@@ -98,6 +99,9 @@ export default function Resume() {
                 <title>Resume | Adithya NR</title>
             </Helmet>
             <header className="resume-header">
+                <Link to="/" title="Home">
+                    <small>Home</small>
+                </Link>
                 <HashLink to="#Bio" scroll={el => el.scrollIntoView({behavior:'smooth', block: 'start'})} title="About">
                     <small>About</small>
                 </HashLink>
