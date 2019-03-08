@@ -6,8 +6,8 @@
   "dependencies": {
     "circular-std": "^1.0.0",
     "hover.css": "^2.3.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-epic-spinners": "^0.2.1",
     "react-helmet": "^5.2.0",
     "react-progressive-image": "^0.6.0",
