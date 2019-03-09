@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
@@ -93,6 +93,11 @@ let skills = [
 ]
 
 export default function Resume() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
     return(
         <div className="container resume">
             <Helmet>

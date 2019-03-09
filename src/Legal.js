@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 
-class Legal extends React.Component{
-  componentDidMount(){
-    ReactDOM.findDOMNode(this).scrollIntoView() 
-  }
-  render(){
+const Legal = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    })
+
     return(
       <div>
           <Helmet>
@@ -21,7 +21,7 @@ class Legal extends React.Component{
                 <strong>Contents of this site are &copy; Copyright 2019, Adithya NR. All rights reserved.</strong> <br/>
                 The&nbsp;
                  <a
-                 href="https://github.com/AdithyaBhat17/adithya.now.sh" 
+                 href="https://github.com/AdithyaBhat17/adithyabhat17.github.io" 
                  alt="source code"
                  title="source code"
                  target="_blank"
@@ -76,7 +76,6 @@ class Legal extends React.Component{
           </div>
       </div>
     )
-  }
 }
 
 export default Legal

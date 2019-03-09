@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import hero from './assets/hero.svg';
 import { Link } from 'react-router-dom';
 
-class Hero extends Component {
-  render() {
+export default function Hero(){
     return (
       <div className="container">
         <div className="row">
@@ -41,8 +40,5 @@ class Hero extends Component {
             </div>
         </div>
       </div>
-    );
-  }
+    )
 }
-
-export default Hero;

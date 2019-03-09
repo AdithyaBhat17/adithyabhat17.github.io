@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
-import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
 import me from './assets/person.svg'
 
-class About extends Component {
-  componentDidMount() {
-    ReactDOM.findDOMNode(this).scrollIntoView()
-    document.querySelector('#fsd')
-    .addEventListener('mouseover',() => alert('A person who can understand a problem, propose a solution and help taking it to reality. \nA full stack designer (some years ago people called them web designers or sometimes are called product designers, or just designers) is a designer that gets involved in every stage of a product design: research, design, development.'))  
-  }
-  render() {  
+const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        document.querySelector('#fsd')
+        .addEventListener('mouseover',() => alert('A person who can understand a problem, propose a solution and help taking it to reality. \nA full stack designer (some years ago people called them web designers or sometimes are called product designers, or just designers) is a designer that gets involved in every stage of a product design: research, design, development.'))  
+    })
+
     return (
       <div>
         <Helmet>
@@ -32,11 +32,25 @@ class About extends Component {
                         <br/>
                         I'm a&nbsp;
                         <span> 
-                            <a style={{color: '#434aae'}} href="https://confirm.udacity.com/JGVCXDQ6" target="_blank" rel="noopener noreferrer" title="My Nanodegree certificate">
+                            <a
+                             style={{color: '#434aae'}} 
+                             href="https://confirm.udacity.com/JGVCXDQ6" 
+                             target="_blank" 
+                             rel="noopener noreferrer" 
+                             title="My Nanodegree certificate">
                                 React Nanodegree Graduate
                             </a>  
                         </span>
-                        &nbsp;and I love design-oriented development. <br/>
+                        , an <span>
+                            <a
+                             style={{color: '#434aae'}} 
+                             href="https://www.interaction-design.org/adithya-nr" 
+                             target="_blank" 
+                             rel="noopener noreferrer" 
+                             title="My IDF Profile">
+                                IDF certified UX Designer
+                            </a>
+                        </span>&nbsp;and I love design-oriented development. <br/>
                         Free time is hard to come by but when it does, I <span>freelance</span> and build web projects for 
                         clients in the 21st century for the time being. <br/>
                         If you have an exciting project in mind, get in touch with me
@@ -71,8 +85,7 @@ class About extends Component {
             </div>
         </div>
       </div>
-    );
-  }
+    )
 }
 
 export default About;

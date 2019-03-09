@@ -1,25 +1,24 @@
-import React, { Component } from 'react';
-import Navbar from './Navbar';
-import ReactDOM from 'react-dom';
+import React, { useEffect } from 'react'
+import Navbar from './Navbar'
 import projects from './utils/_projects'
-// import axios from 'axios'
-// import ReactImageFallback from 'react-image-fallback'
 import ProgressiveImage from 'react-progressive-image'
 import { Helmet } from 'react-helmet'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { AtomSpinner } from 'react-epic-spinners'
-import Footer from './Footer';
+import Footer from './Footer'
 
-class Projects extends Component {
-    componentDidMount() {
-      ReactDOM.findDOMNode(this).scrollIntoView()
-    }
-  render() {
-    const placeholder = (
-        <div className="loader-project">
-            <AtomSpinner color="#000" className="loader" />
-        </div>
-    ) 
+const placeholder = (
+    <div className="loader-project">
+        <AtomSpinner color="#000" className="loader" />
+    </div>
+) 
+
+const Projects = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
     return (
         <div>
             <Helmet>
@@ -33,7 +32,6 @@ class Projects extends Component {
                     {projects && projects.map(project => (
                         <div key={project.name} className="col-md-6 col-sm-12 hover">
                             <Link to={`/work/${project.path}`} className="thumbnail">
-                                {/* <ReactImageFallback fallbackImage={project.image} src={project.image} alt={project.name} className="project-img"/> */}
                                 <ProgressiveImage src={project.image} placeholder="">
                                     {(src, loading) => {
                                         return loading ? placeholder : <img className="project-img" src={src} alt={project.name}/>;
@@ -48,7 +46,7 @@ class Projects extends Component {
                 <Footer />
             </div>
         </div>
-    );
-  }
+    )
 }
+
 export default Projects;
