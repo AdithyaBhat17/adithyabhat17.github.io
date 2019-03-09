@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar{
-  display: none
-}
-
 body {
   color: #444;
   margin: 0;
