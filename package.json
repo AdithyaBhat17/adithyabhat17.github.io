@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://adithyabhat17.github.io",
   "dependencies": {
+    "@auth0/cosmos": "^0.21.0",
     "circular-std": "^1.0.0",
     "hover.css": "^2.3.2",
     "react": "^16.8.4",
