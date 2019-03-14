@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
     
 const contact = (e) => {
+    // TODO : Verify existence of mail id.
     document.form.action="https://getsimpleform.com/messages?form_api_token=de3f3e206755bfc7b484633b6ab33cff"
     alert(`Thanks for reaching out ${e.target.name.value}! I'll get back to you ASAP!`)
 }
@@ -37,15 +38,15 @@ const Contact = () => {
                             <input type='hidden' name='_spam' value='message' />
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" name="name" className="form-control"/>
+                                <input type="text" name="name" className="form-control" required/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" name="email" className="form-control"/>
+                                <input type="email" name="email" className="form-control" required/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>
-                                <textarea rows="3" name="message" className="form-control"/>
+                                <textarea rows="3" name="message" className="form-control" required/>
                             </div>
                             <p className="buttons left">
                                 <input type="submit" value="Send"/>

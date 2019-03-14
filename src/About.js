@@ -3,13 +3,14 @@ import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
 import me from './assets/person.svg'
+import { Tooltip } from '@auth0/cosmos'
 
 const About = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        document.querySelector('#fsd')
-        .addEventListener('mouseover',() => alert('A person who can understand a problem, propose a solution and help taking it to reality. \nA full stack designer (some years ago people called them web designers or sometimes are called product designers, or just designers) is a designer that gets involved in every stage of a product design: research, design, development.'))  
+        // document.querySelector('#fsd')
+        // .addEventListener('mouseover',() => alert('A person who can understand a problem, propose a solution and help taking it to reality. \nA full stack designer (some years ago people called them web designers or sometimes are called product designers, or just designers) is a designer that gets involved in every stage of a product design: research, design, development.'))  
     })
 
     return (
@@ -28,7 +29,14 @@ const About = () => {
                         About Me
                     </h1>
                     <p className="about-me me-p">
-                        As you might have guessed already, I'm Adithya, a twenty-one-year-old <span id="fsd">Full-Stack Designer</span> from Bengaluru, India.
+                        As you might have guessed already, I'm Adithya, a twenty-one-year-old&nbsp;
+                        <span id="fsd"> 
+                        <Tooltip
+                         position='top' 
+                         content='A designer that gets involved in every stage of a product design: research, design, development.'>
+                            Full-Stack Designer
+                        </Tooltip></span>&nbsp;
+                        from Bengaluru, India.
                         <br/>
                         I'm a&nbsp;
                         <span> 
