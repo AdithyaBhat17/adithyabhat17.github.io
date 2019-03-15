@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet'
 import me from './assets/person.svg'
 import { Tooltip } from '@auth0/cosmos'
 
@@ -9,15 +8,12 @@ const About = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        // document.querySelector('#fsd')
+        document.title = 'About | Adithya NR'
         // .addEventListener('mouseover',() => alert('A person who can understand a problem, propose a solution and help taking it to reality. \nA full stack designer (some years ago people called them web designers or sometimes are called product designers, or just designers) is a designer that gets involved in every stage of a product design: research, design, development.'))  
     })
 
     return (
       <div>
-        <Helmet>
-            <title>About | Adithya NR</title>
-        </Helmet>
         <Navbar selected={2} />
         <div className="container animated fadeIn">
             <div className="row">
@@ -35,8 +31,7 @@ const About = () => {
                          position='top' 
                          content='A designer that gets involved in every stage of a product design: research, design, development.'>
                             Full-Stack Designer
-                        </Tooltip></span>&nbsp;
-                        from Bengaluru, India.
+                        </Tooltip></span>&nbsp;from Bengaluru, India.
                         <br/>
                         I'm a&nbsp;
                         <span> 

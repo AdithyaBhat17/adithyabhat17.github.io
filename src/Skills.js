@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Navbar from './Navbar'
-import { Helmet } from 'react-helmet'
 // import { Redirect } from 'react-router-dom'
 
 import error from './assets/error.svg'
@@ -9,15 +8,13 @@ const Skills = (props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.title = 'Skills (Coming Soon!) | Adithya NR'
     })
 
     return(
         <div>
             <Navbar selected={3} />
             {/* <br className="hide"/> */}
-                <Helmet>
-                    <title>Skills (Coming Soon!) | Adithya NR</title>
-                </Helmet>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-12 animated fadeIn">
