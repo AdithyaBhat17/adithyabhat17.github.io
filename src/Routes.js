@@ -7,8 +7,9 @@ import Contact from './Contact'
 import Resume from './Resume'
 import Work from './Work'
 import Legal from './Legal'
-import Error from './Error';
-import Skills from './Skills';
+import Error from './Error'
+import Skills from './Skills'
+import Tools from './Tools'
 
 const Routes = () => {
   return (
@@ -19,6 +20,7 @@ const Routes = () => {
             <Route exact path="/skills" component={Skills}/>
             <Route exact path="/work" component={Projects}/>
             <Route exact path="/work/:path" component={Work}/>
+            <Route exact path="/tools" component={Tools}/>
             <Route exact path="/contact" component={Contact}/>
             <Route exact path="/resume" component={Resume}/>
             <Route exact path="/legal" component={Legal}/>  
