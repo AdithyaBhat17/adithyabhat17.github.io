@@ -36,8 +36,8 @@
 // * [Any.do](https://)
 //  -->
 
-export const tools = [{
-    "Devices": [{
+export const tools = {
+    "0": [{
         name: 'Asus RoG Strix 15',
         link: 'https://www.amazon.in/15-6-inch-Laptop-Windows-Graphics-GL503GE-EN041T/dp/B07DQPFD21/'
     },
@@ -49,7 +49,7 @@ export const tools = [{
         name: 'Apple Pencil - 1st Gen',
         link: 'https://www.amazon.in/Apple-MK0C2ZM-Pencil-iPad-White/dp/B016NY7784/'
     }],
-    "Design": [{
+    "1": [{
         name: 'ProCreate',
         link: 'https://procreate.art/'
     },
@@ -61,7 +61,7 @@ export const tools = [{
         name: 'Figma',
         link: 'https://figma.com'
     }],
-    "Development": [{
+    "2": [{
         name: 'VS Code Editor',
         link: 'https://code.visualstudio.com'
     },
@@ -70,8 +70,8 @@ export const tools = [{
         link: 'https://hyper.is'
     },
     {
-        name: 'Chrome Canary',
-        link: 'https://www.google.com/intl/en_in/chrome/canary/'
+        name: 'Node.js Runtime',
+        link: 'https://nodejs.org/en/'
     },
     {
         name: 'Postman',
@@ -81,7 +81,7 @@ export const tools = [{
         name: 'Git and Github',
         link: 'https://www.github.com/'
     }],
-    "OS": [{
+    "3": [{
         name: 'Windows 10 Home',
         link: 'https://www.microsoft.com/en-in/software-download/windows10'
     },
@@ -89,19 +89,19 @@ export const tools = [{
         name: 'KDE Neon',
         link: 'https://neon.kde.org/'
     }],
-    "Notes": [{
+    "4": [{
         name: 'Evernote',
         link: 'https://evernote.com'
     },
     {
         name: 'OneNote',
         link: 'https://onenote.com'
-    },
-    {
+    }],
+    "5": [{
         name: 'Notion',
         link: 'https://notion.so'
-    }],
-    "Task Management": [{
+    },
+    {
         name: 'Trello',
         link: 'https://trello.com'
     },
@@ -113,7 +113,7 @@ export const tools = [{
         name: 'Any.do',
         link: 'https://any.do'
     }],
-    "Blogs": [{
+    "6": [{
         name: 'The Dev Community',
         link: 'https://dev.to'
     },
@@ -133,13 +133,9 @@ export const tools = [{
         name: 'Robin Wieruch',
         link: 'https://www.robinwieruch.de/'
     }],
-    "Courses": [{
+    "7": [{
         name: 'Interaction Design Foundation',
         link: 'https://interaction-design.org'
-    },
-    {
-        name: 'The Web Developer Bootcamp',
-        link: 'https://www.udemy.com/the-web-developer-bootcamp/'
     },
     {
         name: 'The Web Developer Bootcamp',
@@ -153,4 +149,4 @@ export const tools = [{
         name: 'Python For Everybody',
         link: 'https://www.coursera.org/specializations/python' 
     }]
-}]
+}

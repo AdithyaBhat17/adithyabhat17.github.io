@@ -16,6 +16,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tools-h3 {
+  margin-top: 25px;
+}.tools-h3:first-of-type{
+  margin-top: 0;
+}
+
+.list {
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  padding: 2px 5px ;
+  box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.03);
+  background-color: #ececec;
+}
+
 img{
   max-width: 100%;
 }
@@ -46,7 +62,7 @@ img{
   width: 60%;
 }
 
-.navbar-nav>li>a:hover,.navbar-nav>li>a:focus,.navbar-nav>li>a:active,{
+.navbar-nav>li>a:hover,.navbar-nav>li>a:focus,.navbar-nav>li>a:active{
   text-decoration: line-through
 }
 
