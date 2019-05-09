@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Tools = () => {
     React.useEffect(() => {
-        document.title = 'Tools I Use - Adithya NR'
+        document.title = 'Tools I Tinker With - Adithya NR'
         window.scrollTo(0, 0)
     })
     return (
@@ -13,7 +13,7 @@ const Tools = () => {
             <Navbar selected = {3} />
             <br/>
             <div className="container">                
-                <h1 className="contact-h1 work-h1">Tools I Use</h1> <br/>
+                <h1 className="contact-h1 work-h1">Tools I Tinker With</h1> <br/>
                 <h3 className="tools-h3">Devices</h3>
                 {tools && tools["0"].map((device, index) => (
                     <li
