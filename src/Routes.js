@@ -1,32 +1,38 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import App from './App'
-import About from './About'
-import Projects from './Projects';
-import Contact from './Contact'
-import Resume from './Resume'
-import Work from './Work'
-import Legal from './Legal'
-import Error from './Error'
-import Skills from './Skills'
-import Tools from './Tools'
+import { AtomSpinner } from 'react-epic-spinners'
 
-const Routes = () => {
+const About = lazy(() => import('./About'))
+const Projects = lazy(() => import('./Projects'))
+const Contact = lazy(() => import('./Contact'))
+const Resume = lazy(() => import('./Resume'))
+const Work = lazy(() => import('./Work'))
+const Legal = lazy(() => import('./Legal'))
+const Error = lazy(() => import('./Error'))
+const Skills = lazy(() => import('./Skills'))
+const Tools = lazy(() => import('./Tools'))
+
+const loading = <AtomSpinner color="#000" className="loading" />
+
+const Routes = (props) => {
   return (
-    <Router>
+    <Suspense fallback={loading}>
+      <Router>
         <Switch>
             <Route exact path="/" component={App}/>
-            <Route exact path="/about" component={About}/>
-            <Route exact path="/skills" component={Skills}/>
-            <Route exact path="/work" component={Projects}/>
-            <Route exact path="/work/:path" component={Work}/>
-            <Route exact path="/tools" component={Tools}/>
-            <Route exact path="/contact" component={Contact}/>
-            <Route exact path="/resume" component={Resume}/>
-            <Route exact path="/legal" component={Legal}/>  
-            <Route component={Error}/>                 
+            <Route exact path="/about" component={() => <About />}/>
+            <Route exact path="/skills" component={() => <Skills />}/>
+            <Route exact path="/work" component={() => <Projects />}/>
+            <Route exact path="/work/:path" component={(props) => <Work {...props}/>}/>
+            <Route exact path="/tools" component={() => <Tools />}/>
+            <Route exact path="/contact" component={() => <Contact />}/>
+            <Route exact path="/resume" component={() => <Resume />}/>
+            <Route exact path="/legal" component={() => <Legal />}/>  
+            <Route component={() => <Error />}/>                 
         </Switch>
-    </Router>
+      </Router>
+    </Suspense>
   )
 }
   
