@@ -219,6 +219,11 @@ a:hover{
   margin: 50px auto;
 }
 
+.loading {
+  display: block;
+  margin: 40vh auto;  
+}
+
 .project-details>h1{
   font-weight: bold;
   font-size: 4em;
