@@ -6,6 +6,16 @@ import wyr from '../assets/wyr/whole.png'
 import grandmentor from '../assets/grandmentor/whole.png'
 import baps from '../assets/bapusaheb/whole.png'
 import aikya from '../assets/aikya/whole.png'
+import yellowglove from '../assets/yellowglove/whole.png'
+
+import yellow_dp from '../assets/yellowglove/logo.png'
+import yellow_home from '../assets/yellowglove/home.png'
+import yellow_meet from '../assets/yellowglove/meet.png'
+import yellow_services from '../assets/yellowglove/services.png'
+import yellow_init from '../assets/yellowglove/initial-design'
+import yellow_cleaners from '../assets/yellowglove/cleaners.png'
+import yellow_ease from '../assets/yellowglove/ease.png'
+import yellow_discount from '../assets/yellowglove/discount.png'
 
 // vignesh
 import vignesh_dp from '../assets/vignesh/dp.jpg'
