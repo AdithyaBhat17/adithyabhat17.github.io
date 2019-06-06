@@ -111,7 +111,7 @@ let projects = [
             },{
                 img: yellow_ease,
                 title: 'Ease of access',
-                description: 'This section illustrates how the user can schedule a cleaning at their desired time in three simple steps.'
+                description: 'This section illustrates how the user can schedule a cleaning at a convenient time slot in three simple steps.'
             },{
                 img: yellow_discount,
                 title: 'Get A Quote',
