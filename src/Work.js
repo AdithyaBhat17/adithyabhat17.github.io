@@ -68,7 +68,7 @@ export default class Work extends React.Component{
                                     <p className="about-me">{project.solutiontext}</p>
                                     {project.solutionImg && <ProgressiveImage src={project.solutionImg} placeholder="">
                                             {(src, loading) => {
-                                                return loading ? placeholder : <img src={src} style={{marginBottom: 25}} title={project.name} alt={project.name}/>;
+                                                return loading ? placeholder : <img src={src} style={{marginBottom: 25, width: '100%'}} title={project.name} alt={project.name}/>;
                                             }}
                                         </ProgressiveImage>
                                     }
