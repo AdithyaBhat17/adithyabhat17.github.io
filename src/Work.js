@@ -66,6 +66,12 @@ export default class Work extends React.Component{
                             {project.solutiontext && (
                                 <div>
                                     <p className="about-me">{project.solutiontext}</p>
+                                    {project.solutionImg && <ProgressiveImage src={project.solutionImg} placeholder="">
+                                            {(src, loading) => {
+                                                return loading ? placeholder : <img src={src} style={{marginBottom: 25}} title={project.name} alt={project.name}/>;
+                                            }}
+                                        </ProgressiveImage>
+                                    }
                                 </div>
                             )} <br/>
                             {project.solution && project.solution.map((work, index) => index % 2 === 0 ? (
