@@ -115,7 +115,7 @@ let projects = [
             },{
                 img: yellow_discount,
                 title: 'Get A Quote',
-                description: 'This section renders an illustration where users can reserve a booking and get upto 15% discount. Users can also get in touch with Yellow Glove for their queries either by mail or phone.'
+                description: 'This section renders an illustration where users can reserve a booking and avail upto 15% discount. Users can also get in touch with Yellow Glove for their queries either by mail or phone.'
             },
         ],
         solutiontext: 'I initially started designing the logo by illustrating minimal icons and trying out few typographies. After numerous sketches and redesigns, the logo shown in the about section of this page was opted. After designing the logo, I presented the following three designs for the landing page. The third design was opted which led the foundation for the development process. I appropriated React.js configured with Webpack and Babel for the development of this landing page.',
