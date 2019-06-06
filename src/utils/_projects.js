@@ -8,11 +8,13 @@ import baps from '../assets/bapusaheb/whole.png'
 import aikya from '../assets/aikya/whole.png'
 import yellowglove from '../assets/yellowglove/whole.png'
 
-import yellow_dp from '../assets/yellowglove/logo.png'
+import yellow_dp from '../assets/yellowglove/yellow_dp.png'
+// import yellow_logo from '../assets/yellowglove/logo.png'
+import y_perf from '../assets/yellowglove/performance.PNG'
 import yellow_home from '../assets/yellowglove/home.png'
 import yellow_meet from '../assets/yellowglove/meet.png'
 import yellow_services from '../assets/yellowglove/services.png'
-import yellow_init from '../assets/yellowglove/initial-design'
+import yellow_init from '../assets/yellowglove/initial-design.png'
 import yellow_cleaners from '../assets/yellowglove/cleaners.png'
 import yellow_ease from '../assets/yellowglove/ease.png'
 import yellow_discount from '../assets/yellowglove/discount.png'
@@ -78,6 +80,57 @@ import a_event from '../assets/aikya/events.png'
 
 let projects = [
     {
+        name: "Yellow Glove",
+        desc: "Home cleaning services",
+        url: "https://yellowglove.co/",
+        image: yellowglove,
+        category: 'MVP',
+        path: 'yellow-glove',
+        about: {
+            dp: yellow_dp,
+            bio: 'Yellow Glove is a MVP providing services in Manhattan, NYC. It lets users book or hire cleaners from the comfort of their homes with just the click of a button. This web app aims to eliminate the hassles faced by people in cleaning their homes.'
+        },
+        statement: 'Yellow Glove, a minimum viable product requires a minimalistic logo along with a landing page to test and validate the user demand.',
+        solution: [
+            {
+                img: yellow_home,
+                title: 'Landing Page',
+                description: '"Get your life back!" was the tagline suggested to let the users know they could relax and let Yellow Glove worry about their cleaning problems.'
+            },{
+                img: yellow_meet,
+                title: 'About Section',
+                description: 'This section lets users to book a cleaning with just a single click. Zenbooker services is used to implement the same.'
+            },{
+                img: yellow_services,
+                title: 'Our Services',
+                description: 'This section provides an insight on how users can book a cleaning with other add-on options.'
+            },{
+                img: yellow_cleaners,
+                title: 'Our Cleaners',
+                description: 'This section lets users know that the cleaners are thoroughly verified, background checked and trained to ensure the best service.'
+            },{
+                img: yellow_ease,
+                title: 'Ease of access',
+                description: 'This section illustrates how the user can schedule a cleaning at their desired time in three simple steps.'
+            },{
+                img: yellow_discount,
+                title: 'Get A Quote',
+                description: 'This section renders an illustration where users can reserve a booking and get upto 15% discount. Users can also get in touch with Yellow Glove for their queries either by mail or phone.'
+            },
+        ],
+        solutiontext: 'I initially started designing the logo by illustrating minimal icons and trying out few typographies. After numerous sketches and redesigns, the logo shown in the about section of this page was opted. After designing the logo, I presented the following three designs for the landing page. The third design was opted which led the foundation for the development process. I appropriated React.js configured with Webpack and Babel for the development of this landing page.',
+        solutionImg: yellow_init,
+        tech:{
+            design: 'Adobe Illustrator (Logo), Figma (Landing Page)',
+            development: 'React.js / Webpack / Babel / CSS3'
+        },
+        performance: y_perf,
+        testimonial: {
+            text: 'I had the opportunity to work with Adithya. Adithya helped with the design and development of the Yellow Glove website. It was amazing to work with him, the work was remote and there was no setback, I would definitely recommend it!',
+            name: 'José Mosso',
+            role: 'Yellow Glove'
+        }
+    },{
         name: "Vignesh Kannan",
         desc: "A UI/UX Portfolio built using React.js",
         url: "https://vignesh.now.sh/",
