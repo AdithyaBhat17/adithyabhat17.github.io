@@ -29,7 +29,7 @@ export default function Hero(){
                     <a target="_blank" rel="noopener noreferrer" title="instagram" href="https://www.instagram.com/adithya_nr">
                         <i className="fab fa-instagram"></i>
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" title="medium" href="https://www.medium.com/adithya-nr">
+                    <a target="_blank" rel="noopener noreferrer" title="medium" href="https://www.github.com/AdithyaBhat17">
                         <i className="fab fa-github"></i>
                     </a>
                     <a target="_blank" rel="noopener noreferrer" title="linkedin" href="https://www.linkedin.com/in/adithya-nr">
