@@ -4,7 +4,6 @@ import rnschronicles from '../assets/rnsit-chronicles/whole.png'
 import spazzo from '../assets/spazzo/whole.png'
 import wyr from '../assets/wyr/whole.png'
 import grandmentor from '../assets/grandmentor/whole.png'
-import baps from '../assets/bapusaheb/whole.png'
 import aikya from '../assets/aikya/whole.png'
 import yellowglove from '../assets/yellowglove/whole.png'
 
@@ -64,13 +63,6 @@ import gperf from '../assets/grandmentor/performance.png'
 import gm_home from '../assets/grandmentor/home.png'
 import gm_about from '../assets/grandmentor/about.png'
 import gm_ser from '../assets/grandmentor/services.png'
-
-// baps
-import baps_dp from '../assets/bapusaheb/dp.png'
-import bperf from '../assets/bapusaheb/bapspatil.png'
-import baps_home from '../assets/bapusaheb/home.png'
-import baps_media from '../assets/bapusaheb/media.png'
-import baps_work from '../assets/bapusaheb/work.png'
 
 // aikya
 import aperf from '../assets/aikya/performance.png'
@@ -251,47 +243,7 @@ let projects = [
             development: 'React.js / CSS3 / Firestore'
         },
         performance: rperf
-    },
-    {
-        name: "Bapusaheb Patil",
-        desc: "A portfolio made with React.js",
-        url: "https://bapspatil.com/",
-        image: baps,
-        category: 'Portfolio',
-        path: 'bapspatil',
-        about: {
-            dp: baps_dp,
-            bio: 'Bapusaheb Patil is a Google Certified Android Developer and an IDF Certified UX Designer who makes apps & watchfaces. He is currently mentoring at Udacity, OpenClassrooms, MentorCruise and Codementor.'
-        },
-        statement: 'To build a personal website that showcases Bapusaheb\'s mobile apps & watchfaces. The website should also have articles he wrote, ones written on him in the media, and slides to his talks on stage.',
-        solution: [
-            {
-                img: baps_home,
-                title: 'Home Page',
-                description: 'The home page gives the user insight on who Bapusaheb is and what he does. The three buttons help the user navigate across all the pages easily.'
-            },{
-                img: baps_media,
-                title: 'Media',
-                description: 'This page showcases all the articles written by Bapusaheb along with the ones written on him. Each card redirects the user to the particular article hosted on popular platforms such as Medium, LinkedIn and so on.'
-            },{
-                img: baps_work,
-                title: 'Work',
-                description: 'Here, the user can see and read about all the Android apps built by Bapusaheb along with his Android Watchface collections. An option to download the app or view the watchface collection is provided as well.'
-            }
-        ],
-        solutiontext:'',
-        tech:{
-            design: 'Adobe XD',
-            development: 'React.js / CSS3'
-        },
-        performance: bperf,
-        testimonial: {
-            text: 'Adithya built my personal portfolio that was just amazing in terms of design. We worked on a few UX projects as well. His passion for UX and UI design combined with his passion for web development is a deadly combination. The amount of effort and time he puts into his work is something that every junior developer should take note of and aspire toward. I have no doubt that someone looking to hire a Web Developer, be it for Front End or Full Stack, need not look any further than Adithya. He\'s the right man for the job and exceeds expectations even under tight deadlines.',
-            name: 'Bapusaheb Patil',
-            role: 'Mentor & Public Speaker'
-        }
-    },
-    {
+    }, {
         name: "Grand Mentor LLC",
         desc: "A global automotive consultancy",
         url: "https://grand-mentor.com/",
@@ -375,7 +327,7 @@ let projects = [
     {
         name: "Would you rather",
         desc: "A classic Gen-Y game",
-        url: "https://wyr.now.sh/",
+        url: "https://wyr.onrender.com/",
         image: wyr,
         category: 'Game',
         path: 'would-you-rather',
