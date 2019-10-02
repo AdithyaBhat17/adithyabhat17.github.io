@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import sheet from './assets/specs.svg'
 import { Link } from 'react-router-dom'
@@ -12,9 +12,17 @@ const contact = (e) => {
 
 const Contact = () => {
 
+    const [valid, setValid] = useState(true)
+
     useEffect(() => {
         window.scrollTo(0, 0)
-    })
+    })    
+
+    const verifyEmail = async (emailId) => {
+        let re = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+        let valid = re.test(emailId)
+        setValid(valid)
+    }
 
     return(
         <div>
@@ -42,7 +50,16 @@ const Contact = () => {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" name="email" className="form-control" required/>
+                                <input
+                                 onBlur={(e) => verifyEmail(e.target.value)} 
+                                 type="email" 
+                                 name="email" 
+                                 className={valid ? "form-control" : "error-input form-control"}
+                                 required
+                                />
+                                {!valid && <small className="error">
+                                    Invalid email address
+                                </small>}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>
