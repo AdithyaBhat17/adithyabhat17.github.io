@@ -15,7 +15,7 @@ const Tools = lazy(() => import('./Tools'))
 
 const loading = <AtomSpinner color="#000" className="loading" />
 
-const Routes = (props) => {
+const Routes = () => {
   return (
     <Suspense fallback={loading}>
       <Router>

@@ -9,12 +9,11 @@ const About = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
         document.title = 'About | Adithya NR'
-        // .addEventListener('mouseover',() => alert('A person who can understand a problem, propose a solution and help taking it to reality. \nA full stack designer (some years ago people called them web designers or sometimes are called product designers, or just designers) is a designer that gets involved in every stage of a product design: research, design, development.'))  
     })
 
     return (
-      <div>
-        <Navbar selected={2} />
+      <React.Fragment>
+        <Navbar />
         <div className="container animated fadeIn">
             <div className="row">
                 <div className="col-lg-6 col-sm-12">
@@ -87,7 +86,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-      </div>
+      </React.Fragment>
     )
 }
 

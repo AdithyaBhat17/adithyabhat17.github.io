@@ -75,6 +75,14 @@ img{
   background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke=\'%23444\' stroke-width=\'3\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h12M4 23h17 \'/></svg>')
 }
 
+.active-nav-link {
+  text-decoration:line-through;
+}
+
+.nav-link {
+  color: #444 !important;
+}
+
 a{
   color: #434aae;
   /* cursor: url('../src/assets/pointer.png'), auto; */

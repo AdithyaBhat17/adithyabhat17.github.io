@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { HashLink } from 'react-router-hash-link'
-import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 let education = [
@@ -96,13 +95,11 @@ export default function Resume() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.title = 'Resume | Adithya NR'
     })
 
     return(
         <div className="container resume">
-            <Helmet>
-                <title>Resume | Adithya NR</title>
-            </Helmet>
             <header className="resume-header">
                 <Link to="/" title="Home">
                     <small>Home</small>

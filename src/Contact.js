@@ -19,7 +19,7 @@ const Contact = () => {
     })    
 
     const verifyEmail = async (emailId) => {
-        let re = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+        let re = new RegExp(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/)
         let valid = re.test(emailId)
         setValid(valid)
     }
@@ -36,7 +36,7 @@ const Contact = () => {
                 <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js?v=1531493681238" defer>
                 </script>
             </Helmet>
-            <Navbar selected={5}/>
+            <Navbar />
             <div className="container animated fadeIn">
                 <div className="row">
                     <div className="col-lg-6 col-sm-12">
@@ -73,7 +73,7 @@ const Contact = () => {
                         <a className="feedback" href="https://5f1ed849.nolt.io/" target="_blank" rel="noopener noreferrer">Have time for some Feedback?</a>
                     </div>
                     <div className="col-lg-6 col-sm-12">
-                        <img src={sheet} alt="" className="contact-img"/>
+                        <img src={sheet} alt="contact" className="contact-img"/>
                     </div>
                     
                 </div>

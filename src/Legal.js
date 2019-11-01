@@ -1,19 +1,16 @@
 import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { Helmet } from 'react-helmet'
 
 const Legal = () => {
 
     useEffect(() => {
       window.scrollTo(0, 0)
+      document.title = 'Legal | Adithya NR'
     })
 
     return(
-      <div>
-          <Helmet>
-            <title>Legal | Adithya NR</title>
-          </Helmet>
+      <React.Fragment>
           <Navbar />
           <br/>
           <div className="container">
@@ -74,7 +71,7 @@ const Legal = () => {
               <br/> <br/>
               <Footer />
           </div>
-      </div>
+      </React.Fragment>
     )
 }
 

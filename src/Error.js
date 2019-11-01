@@ -10,7 +10,7 @@ export default function Error(props){
 
     return(
         <div>
-            <Navbar selected={1}/>
+            <Navbar />
             <br className="hide"/>
             <div className="container">
                 <div className="row">

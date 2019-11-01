@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import projects from './utils/_projects'
 import ProgressiveImage from 'react-progressive-image'
-import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { AtomSpinner } from 'react-epic-spinners'
 import Footer from './Footer'
@@ -17,14 +16,12 @@ const Projects = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.title = 'Work | Adithya NR'
     })
 
     return (
-        <div>
-            <Helmet>
-                <title>Work | Adithya NR</title>
-            </Helmet>
-            <Navbar selected={4}/>
+        <React.Fragment>
+            <Navbar />
             <br/>
             <div className="container animated fadeIn">
                 <h1 className="contact-h1 work-h1">My Work</h1> <br/>
@@ -45,7 +42,7 @@ const Projects = () => {
                 </div> <br/> <br className="hide"/>
                 <Footer />
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 
