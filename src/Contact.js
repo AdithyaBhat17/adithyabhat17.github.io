@@ -30,10 +30,11 @@ const Contact = () => {
                 <title>Contact | Adithya NR</title>
                 <meta name="description" content="Got a project in mind, a question or something else? Get in touch with me here"/>
                 <meta name="og:description" content="Got a project in mind, a question or something else? Get in touch with me here"/>
+                <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
                 <script>
-                    {'var LandbotLiveConfig = { index: \'https://landbot.io/u/H-59003-WNTZ6MRU56B9E9UL/index.html\', accent: \'#444444\' }'}
-                </script>
-                <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js?v=1531493681238" defer>
+                  var myLandbot = new LandbotLivechat({
+                    index: 'https://landbot.io/u/H-330271-2RB1E3Y80V7XDYSX/index.html',
+                  });
                 </script>
             </Helmet>
             <Navbar />
