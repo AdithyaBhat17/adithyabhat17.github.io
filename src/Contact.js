@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import sheet from './assets/specs.svg'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
     
 const contact = (e) => {
     // TODO : Verify existence of mail id.
