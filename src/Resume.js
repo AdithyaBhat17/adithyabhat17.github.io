@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom'
 
 let education = [
     {
+        year: '2019',
+        course: 'Human-Computer Interaction',
+        institution: 'Interaction Design Foundation',
+        score: ''
+    },
+    {
         year: '2018',
         course: 'React Nanodegree',
         institution: 'Udacity',
@@ -24,6 +30,12 @@ let education = [
 ]
 
 let projects = [
+    {
+        title: 'Trayah Pottery',
+        date: 'Oct 2019 - Jan 2020',
+        url: 'https://trayahpottery.com',
+        desc: 'A Landing page + dashboard for a Pottery studio built using React, TypeScript, Express.js and Firestore'
+    },
     {
         title: 'RNS Chronicles',
         date: 'Oct 2018 - Nov 2018',
@@ -58,11 +70,18 @@ let projects = [
 
 let experience = [
     {
+        role: 'Associate Software Engineer',
+        company: 'Betsol',
+        date: 'July 2019 - Present',
+        url: 'https://betsol.com',
+        workdone: 'Working on LeTo, a DevOps automation tool as a Full-Stack Engineer using React-Redux, Express.js and PostgreSQL.'
+    },
+    {
         role: 'Intern',
         company: 'Betsol',
         date: 'January 2019 - Present',
         url: 'https://betsol.com',
-        workdone: 'Working on redesigning the admin dashboard for the sales team of Zmanda, Betsol.'
+        workdone: 'Worked on redesigning the admin dashboard for the sales team of Zmanda, Betsol, using Figma, React-Redux and Material Design.'
     },
     {
         role: 'Freelance Web Developer',
@@ -87,7 +106,7 @@ let skills = [
     },
     {
         field: 'Development',
-        skills: 'Javascript / ReactJS / React-Native / Redux / Java / NodeJS / GraphQL / ElectronJS / Python / HTML5 / CSS3'
+        skills: 'Javascript / ReactJS / Redux / React-Native / Java / NodeJS / GraphQL / Gatsby / Next.js / Python / HTML5 / CSS3'
     },
 ]
 
