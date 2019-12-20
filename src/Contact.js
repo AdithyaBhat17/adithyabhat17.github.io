@@ -16,6 +16,7 @@ const Contact = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.title = 'Contact | Adithya NR'
     })    
 
     const verifyEmail = async (emailId) => {
@@ -26,17 +27,6 @@ const Contact = () => {
 
     return(
         <div>
-            <Helmet>
-                <title>Contact | Adithya NR</title>
-                <meta name="description" content="Got a project in mind, a question or something else? Get in touch with me here"/>
-                <meta name="og:description" content="Got a project in mind, a question or something else? Get in touch with me here"/>
-                <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-                <script>
-                  var myLandbot = new LandbotLivechat({
-                    index: 'https://landbot.io/u/H-330271-2RB1E3Y80V7XDYSX/index.html',
-                  });
-                </script>
-            </Helmet>
             <Navbar />
             <div className="container animated fadeIn">
                 <div className="row">
