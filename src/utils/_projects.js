@@ -74,7 +74,7 @@ let projects = [
     {
         name: "Yellow Glove",
         desc: "Home cleaning services",
-        url: "https://yellowglove.co/",
+        url: "https://test.yellowglove.co/",
         image: yellowglove,
         category: 'MVP',
         path: 'yellow-glove',

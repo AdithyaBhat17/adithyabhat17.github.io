@@ -70,6 +70,10 @@ export const tools = {
         link: 'https://hyper.is'
     },
     {
+        name: 'Sizzy',
+        link: 'https://sizzy.co'
+    },
+    {
         name: 'Node.js Runtime',
         link: 'https://nodejs.org/en/'
     },
