@@ -25,7 +25,7 @@ const Routes = () => {
             <Route exact path="/skills" component={() => <Skills />}/>
             <Route exact path="/work" component={() => <Projects />}/>
             <Route exact path="/work/:path" component={(props) => <Work {...props}/>}/>
-            <Route exact path="/tools" component={() => <Tools />}/>
+            <Route exact path="/uses" component={() => <Tools />}/>
             <Route exact path="/contact" component={() => <Contact />}/>
             <Route exact path="/resume" component={() => <Resume />}/>
             <Route exact path="/legal" component={() => <Legal />}/>  

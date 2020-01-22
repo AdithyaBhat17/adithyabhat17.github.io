@@ -143,7 +143,7 @@ export default function Resume() {
             <div id="Bio" className="resume-div">
                 <h1>Hi, I'm Adithya NR</h1>
                 <p className="resume-p">
-                    A Computer Science Engineer from Bengaluru, India. <br/>
+                    A Front-end Engineer from Bengaluru, India. <br/>
                     I'm a React Nanodegree Graduate and I love design-oriented development. <br/>
                     I have an obsession for detail and perfectly executed designs, I have a strong interest in usability, 
                     and am constantly looking to create intriguing and concept enhancing interactions that remain 

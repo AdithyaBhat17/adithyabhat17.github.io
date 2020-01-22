@@ -178,7 +178,7 @@ let projects = [
         path: 'nikhil-suresh',
         about: {
             dp: nikhil_dp,
-            bio: 'Nikhil is a 21-year-old budding Computer Science Engineering student who initially began writing articles for his college magazine, decided to go forward by having a minimalistic blog of his own.'
+            bio: 'Nikhil is a 22-year-old budding Computer Science Engineering student who initially began writing articles for his college magazine, decided to go forward by having a minimalistic blog of his own.'
         },
         statement: 'A technical blog aims at giving the user a simple understanding of concepts but at times, the design and information can seem cluttered and overwhelming. An attempt is made to design a minimalistic blog that is appealing and easy to navigate. Provisions for displaying other works of the author such as research papers and resume are to be provided.',
         solution: [

@@ -24,7 +24,7 @@ const About = () => {
                         About Me
                     </h1>
                     <p className="about-me me-p">
-                        As you might have guessed already, I'm Adithya, a twenty-one-year-old&nbsp;
+                        As you might have guessed already, I'm Adithya, a twenty-two-year-old&nbsp;
                         <span id="fsd"> 
                         <Tooltip
                          position='top' 
