@@ -1,0 +1,22 @@
+name: CI
+
+on: 
+  push:
+    branches:
+      - version-3
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_versions: [8.x, 10.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: checkout
+      run: echo starting build!
+      
+    - uses: actions/setup-node@v1
+    - name: build and deploy
