@@ -20,3 +20,4 @@ jobs:
       
     - uses: actions/setup-node@v1
     - name: build and deploy
+    - run: npm run deploy
