@@ -14,10 +14,18 @@ jobs:
         node_versions: [10.x]
 
     steps:
+    - uses: actions/checkout@v2
+    - name: checkout
+      run: echo starting build!
+
+    - uses: actions/setup-node@v1
+    - name: install dependencies and create an optimized build
+      run: npm i && npm run build
+        
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
       with:
-        node_version: '10.x'
+        keep_history: true
         build_dir: build/
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
