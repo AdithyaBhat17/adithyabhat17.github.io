@@ -20,4 +20,7 @@ jobs:
       
     - uses: actions/setup-node@v1
     - name: build and deploy
-      run: npm i && npm run deploy
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        npm i && npm run deploy
