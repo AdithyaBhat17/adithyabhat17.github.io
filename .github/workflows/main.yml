@@ -14,15 +14,8 @@ jobs:
         node_versions: [10.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: checkout
-      run: echo starting build!
-      
-    - uses: actions/setup-node@v1
-    - name: build and deploy
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        npm i && npm run deploy
-    - with:
-        github_token: ${{secrets.ACCESS_TOKEN}}
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.0.1
+      with:
+        node_version: '10.x'
+      build_dir: build/
