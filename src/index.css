@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  src: url("./assets/fonts/CircularStd-Black.woff") format("woff");
+  font-family: "Circular Std";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("./assets/fonts/CircularStd-Book.woff") format("woff");
+  font-family: "Circular Std";
+  font-weight: normal;
+}
+
 body {
   color: #444;
   margin: 0;
@@ -11,14 +23,16 @@ body {
   /* cursor: url('../src/assets/cursor.png'), auto; */
   font-size: 16px;
   font-display: swap;
-  font-family: "CircularStd" !important;
+  font-family: "Circular Std" !important;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .tools-h3 {
   margin-top: 25px;
-}.tools-h3:first-of-type{
+}
+.tools-h3:first-of-type {
   margin-top: 0;
 }
 
@@ -27,43 +41,45 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   display: inline-flex;
-  padding: 2px 5px ;
+  padding: 2px 5px;
   box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.03);
   background-color: #ececec;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.navbar{
+.navbar {
   background-color: transparent !important;
   /* padding: 15px !important; */
   border: 0;
   border-radius: 0;
 }
 
-.navbar-brand{
+.navbar-brand {
   width: 70px;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
-.navbar-nav>li>a{
+.navbar-nav > li > a {
   font-size: 18px;
-  color: #444 ;
+  color: #444;
   /* margin-top: 15px; */
   margin-left: 20px;
   text-align: center;
 }
 
-.fsd{
+.fsd {
   background-color: #e6e6e6;
   padding: 10px;
   width: 60%;
 }
 
-.navbar-nav>li>a:hover,.navbar-nav>li>a:focus,.navbar-nav>li>a:active{
-  text-decoration: line-through
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active {
+  text-decoration: line-through;
 }
 
 .navbar-light .navbar-toggler {
@@ -71,43 +87,44 @@ img{
   border: none !important;
   outline: none;
 }
-.navbar-light .navbar-toggler-icon{
-  background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke=\'%23444\' stroke-width=\'3\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h12M4 23h17 \'/></svg>')
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23444' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h12M4 23h17 '/></svg>");
 }
 
 .active-nav-link {
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 
 .nav-link {
   color: #444 !important;
 }
 
-a{
+a {
   color: #434aae;
   /* cursor: url('../src/assets/pointer.png'), auto; */
 }
 
-.hero-tag{
+.hero-tag {
   font-size: 4.5em;
   font-weight: bold;
   margin-top: 15vh;
 }
 
-.hero-img{
+.hero-img {
   margin-top: 5vh;
 }
 
-.about-tag{
+.about-tag {
   width: 85%;
   font-size: 18px;
 }
 
-.buttons{
+.buttons {
   margin-top: 25px;
 }
 
-.buttons>a:first-child,.buttons>button{
+.buttons > a:first-child,
+.buttons > button {
   margin-right: 15px;
   cursor: pointer;
   background-color: #444;
@@ -116,138 +133,139 @@ a{
   border: 2px solid #444;
 }
 
-.buttons>a:nth-child(even){
+.buttons > a:nth-child(even) {
   padding: 10px;
   color: #444;
   border: 2px solid #444;
 }
 
-.socials{
+.socials {
   margin-top: 20vh;
 }
 
-.socials>a{
+.socials > a {
   color: #444;
   margin-right: 15px;
   font-size: 1.5em;
 }
 
 /* about page */
-.who{
+.who {
   font-weight: bold;
   margin-top: 5px;
   font-size: 6em;
 }
 
-.about-me{
+.about-me {
   font-size: 21px;
 }
 
-.me-img{
+.me-img {
   margin-top: 5vh;
 }
 
-.me-p{
+.me-p {
   font-size: 18px;
   /* line-height: 25px; */
 }
 
-.about-me>span{
-  color: #434aae !important
+.about-me > span {
+  color: #434aae !important;
 }
 
-.btn-2{
-  margin-top:0 !important;
+.btn-2 {
+  margin-top: 0 !important;
 }
 
-.btn-2>a{
+.btn-2 > a {
   padding: 10px !important;
 }
 
 /* projects intro page */
 
-.thumbnail{
+.thumbnail {
   border: none;
   color: #444;
   text-decoration: none;
 }
 
-.thumbnail:hover .project-img{
+.thumbnail:hover .project-img {
   -webkit-transform: scale(1.03);
   box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.07);
   transform: scale(1.03);
 }
 
-.thumbnail:hover .project-h2{
+.thumbnail:hover .project-h2 {
   color: #434aae;
   transition-duration: 0.5s;
 }
 
-.thumbnail:hover .project-cat{
+.thumbnail:hover .project-cat {
   opacity: 0.6;
   color: #434aae;
   transition-duration: 0.5s;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-.project-img{
+.project-img {
   -webkit-transition: 0.6s ease;
   transition: 0.4s ease;
 }
 
-.project-h2,.project-cat{
+.project-h2,
+.project-cat {
   text-align: center;
   font-weight: bold;
   color: #444;
   text-decoration: none !important;
 }
 
-.project-h2{
+.project-h2 {
   margin-top: 10px;
 }
 
-.project-cat{
+.project-cat {
   margin-top: -5px;
   opacity: 0.3;
   margin-bottom: 10px;
 }
 
-.loader-project{
+.loader-project {
   width: 100%;
   height: 100%;
-  padding-top: 40px; 
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.loader{
+.loader {
   display: block;
   margin: 50px auto;
 }
 
 .loading {
   display: block;
-  margin: 40vh auto;  
+  margin: 40vh auto;
 }
 
-.project-details>h1{
+.project-details > h1 {
   font-weight: bold;
   font-size: 4em;
 }
 
-h2.about-work{
+h2.about-work {
   font-weight: bold;
 }
 
-.project-details>h3{
+.project-details > h3 {
   opacity: 0.6;
   margin-bottom: 20px;
   margin-top: 0px;
 }
 
-.project-about-img{
+.project-about-img {
   border-radius: 50%;
   border: 8px solid #44444444;
   margin: 0 auto;
@@ -255,26 +273,26 @@ h2.about-work{
   width: 50%;
 }
 
-.project-work-title{
+.project-work-title {
   font-weight: bold;
 }
 
-.project-work-desc{
+.project-work-desc {
   font-size: 32px;
   opacity: 0.7;
 }
 
-.get-in-touch{
+.get-in-touch {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: -20px;
 }
 
-.sol-row{
-  margin-bottom:15px;
+.sol-row {
+  margin-bottom: 15px;
 }
 
-.view-p{
+.view-p {
   margin: 0 auto;
   display: block;
   opacity: 0.7;
@@ -283,13 +301,14 @@ h2.about-work{
 
 /* contact */
 
-.contact-h1{
+.contact-h1 {
   font-weight: bold;
   font-size: 4em;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
-.form-control, .error-input{
+.form-control,
+.error-input {
   border-radius: 0;
   width: 90%;
   border: 0;
@@ -308,537 +327,554 @@ h2.about-work{
   color: #ff0000;
 }
 
-input[type=submit]{
+input[type="submit"] {
   background-color: #444;
   color: #fff;
   border: 0;
   padding: 9px 25px;
-  margin-right:15px;
+  margin-right: 15px;
 }
 
-.feedback{
+.feedback {
   font-size: 0.9em;
   color: #434aae !important;
 }
 
 /* error page */
-.center,.e404,.alexa{
+.center,
+.e404,
+.alexa {
   text-align: center;
   font-weight: bold;
 }
-.e404{
+.e404 {
   font-size: 14em;
   margin-bottom: 0;
 }
-.alexa{
+.alexa {
   color: #44444477;
   margin-top: -35px;
 }
-.buttons>button{
+.buttons > button {
   display: block;
   margin: 0 auto !important;
 }
 
 /* resume */
 
-.resume{
+.resume {
   width: 60%;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
 }
 
-.resume-header{
+.resume-header {
   padding: 10px 0;
   text-align: center;
   color: #444;
 }
 
-.resume-header>a{
+.resume-header > a {
   color: #444;
   font-size: 16px;
   margin-right: 65px;
   color: #434aae !important;
 }
 
-.resume-icons{
-  height: 100%
+.resume-icons {
+  height: 100%;
 }
 
-.resume-div{
+.resume-div {
   margin-bottom: 10vh;
 }
 
-.resume-p,.resume-edu>p{
+.resume-p,
+.resume-edu > p {
   font-size: 18px;
   line-height: 25px;
 }
 
-.resume-socials{
+.resume-socials {
   margin: 10vh auto 5vh;
 }
 
-#Bio:after,#Education:after,#Projects:after,#Experience:after,#Skills:after{
-  content: url('./assets/resume/separator.png');
+#Bio:after,
+#Education:after,
+#Projects:after,
+#Experience:after,
+#Skills:after {
+  content: url("./assets/resume/separator.png");
   position: absolute;
 }
 
 /* phones */
 
 /* TODO: iphone4&5 */
-@media screen and (device-width: 320px){
-  .e404{
+@media screen and (device-width: 320px) {
+  .e404 {
     font-size: 6em !important;
   }
-  .alexa{
+  .alexa {
     font-size: 1.5em;
   }
-  .hero-tag{
+  .hero-tag {
     font-size: 2.5em !important;
   }
-  .about-tag{
+  .about-tag {
     font-size: 18px !important;
   }
-  .project-details>h1{
+  .project-details > h1 {
     font-size: 36px !important;
   }
-  .project-details>h3,.about-work,.project-work-title{
+  .project-details > h3,
+  .about-work,
+  .project-work-title {
     font-size: 24px !important;
   }
-  .socials>a{
+  .socials > a {
     font-size: 1.25em;
   }
 }
 
-@media screen and (max-width:500px){
-  .hero-tag{
+@media screen and (max-width: 500px) {
+  .hero-tag {
     font-size: 2.9em;
     margin: 20px auto 10px;
   }
-  .navbar-brand{
+  .navbar-brand {
     margin-top: 5px;
     width: 60px;
   }
-  .navbar-nav>li>a{
+  .navbar-nav > li > a {
     margin-left: 0;
   }
-  .hero-img{
+  .hero-img {
     margin: -10px auto 0;
     width: 90%;
     display: block;
   }
-  .mock-h1{
+  .mock-h1 {
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
   }
-  .who{
+  .who {
     font-size: 3.5em;
     margin-top: 25px;
-    text-align: center
+    text-align: center;
   }
-  .me-img{
+  .me-img {
     margin-top: 15px;
   }
-  .about-me{
+  .about-me {
     font-size: 18px;
   }
-  .about-tag{
+  .about-tag {
     font-size: 21px;
     width: 100%;
     margin-bottom: 30px;
   }
-  .socials{
-    margin:30px auto;
+  .socials {
+    margin: 30px auto;
   }
-  .contact-h1{
+  .contact-h1 {
     margin: -5px auto 5px;
     font-size: 3em;
     text-align: left;
   }
-  .project-details>h1{
+  .project-details > h1 {
     font-weight: bold;
     font-size: 2.5em;
   }
-  .project-about-img{
+  .project-about-img {
     margin: 0 auto 0 0;
     width: 30%;
   }
-  .project-work-desc{
+  .project-work-desc {
     font-size: 18px;
   }
-  .get-in-touch{
+  .get-in-touch {
     font-size: 21px;
     font-weight: normal;
   }
-  .hide{
+  .hide {
     display: none;
   }
-  .form-control{
+  .form-control {
     width: 100%;
   }
-  .form{
+  .form {
     margin: 15px auto;
   }
-  .contact-img{
-    margin: 20px auto
+  .contact-img {
+    margin: 20px auto;
   }
-  .resume{
+  .resume {
     width: 100%;
   }
-  .resume-header{
+  .resume-header {
     /* margin: 0 ; */
     text-align: center;
   }
-  .resume-header>a{
+  .resume-header > a {
     margin-right: 9px;
   }
-  .e404{
+  .e404 {
     font-size: 8em;
     margin-top: 10px;
-  }  
-  .alexa{
+  }
+  .alexa {
     margin-top: -5px;
     margin-bottom: 15px;
   }
 }
 
-@media only screen and (min-width:501px) and (max-width: 767px){
-  .hero-tag{
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  .hero-tag {
     margin-top: 45px;
   }
-  .about-tag,.buttons>a{
+  .about-tag,
+  .buttons > a {
     font-size: 21px;
     width: 100%;
   }
-  input[value="Send"]{
+  input[value="Send"] {
     font-size: 21px;
   }
-  .who{
+  .who {
     margin-top: 45px;
   }
-  .me-p,.about-me{
+  .me-p,
+  .about-me {
     font-size: 21px;
   }
-  .socials>a{
+  .socials > a {
     font-size: 1.5em;
   }
-  .project-h2{
+  .project-h2 {
     font-size: 42px;
   }
-  .project-cat{
+  .project-cat {
     font-size: 32px;
   }
-  .get-in-touch{
+  .get-in-touch {
     font-weight: normal;
   }
-  .project-about-img{
+  .project-about-img {
     width: 40%;
   }
-  .about-work{
+  .about-work {
     font-size: 36px;
   }
 }
 
-@media only screen and (min-width:768px) and (max-width: 991px){
-  .hero-img,.me-img{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-img,
+  .me-img {
     width: 80%;
     margin: 0 auto;
     display: block;
   }
-  .hero-tag{
+  .hero-tag {
     margin-top: 45px;
     text-align: center;
   }
-  .about-tag,.buttons>a{
+  .about-tag,
+  .buttons > a {
     width: 100%;
     text-align: center;
     font-size: 24px;
   }
-  input[value="Send"]{
+  input[value="Send"] {
     font-size: 24px;
   }
-  .buttons{
+  .buttons {
     text-align: center;
   }
-  .left{
+  .left {
     text-align: left;
   }
-  .feedback{
+  .feedback {
     font-size: 16px;
   }
-  .socials{
+  .socials {
     margin-top: 45px;
     text-align: center;
     font-size: 1.5em;
   }
-  .who{
+  .who {
     margin-top: 45px;
     text-align: center;
   }
-  .me-p,.about-me{
+  .me-p,
+  .about-me {
     font-size: 24px;
   }
-  .me-p{
+  .me-p {
     width: 90%;
     margin: 0 auto;
   }
-  .socials>a{
+  .socials > a {
     font-size: 1.5em;
   }
-  .about-s{
+  .about-s {
     text-align: left;
     width: 90%;
     margin: 30px auto;
   }
-  .project-h2{
+  .project-h2 {
     font-size: 28px;
   }
-  .project-cat{
+  .project-cat {
     font-size: 21px;
   }
-  .get-in-touch{
+  .get-in-touch {
     font-weight: normal;
     font-size: 28px;
   }
-  .project-about-img{
+  .project-about-img {
     width: 30%;
     margin-left: 0;
   }
-  .full-s{
+  .full-s {
     width: 100%;
   }
-  .about-work{
+  .about-work {
     font-size: 36px;
   }
 }
 
-@media only screen and (min-width:992px) and (max-width: 1199px){
-  .navbar-nav>li>a{
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav > li > a {
     margin-top: 20px !important;
   }
-  .hero-img{
+  .hero-img {
     margin-top: 16vh;
   }
-  .hero-tag{
+  .hero-tag {
     font-size: 4em;
     margin-top: 20vh;
   }
-  .about-tag,.buttons>a{
+  .about-tag,
+  .buttons > a {
     font-size: 21px;
   }
-  .socials{
+  .socials {
     margin-top: 45px;
   }
-  .socials>a{
+  .socials > a {
     font-size: 1.5em;
   }
 }
 
-@media only screen and (min-width:1440px){
-  .hero-tag{
+@media only screen and (min-width: 1440px) {
+  .hero-tag {
     margin-top: 22vh;
   }
-  .about-tag{
+  .about-tag {
     margin-top: 25px;
     font-size: 18px;
     margin-bottom: 45px;
   }
-  .hero-img{
+  .hero-img {
     margin-top: 13vh;
   }
-  .who{
+  .who {
     margin-top: 12vh;
   }
-  .contact-h1{
+  .contact-h1 {
     margin-top: 10vh;
     margin-bottom: 15px;
   }
-  .contact-img{
+  .contact-img {
     margin-top: 15vh;
   }
-  .me-img{
+  .me-img {
     margin-top: 15vh;
   }
-  .work-h1{
+  .work-h1 {
     margin-top: 0;
   }
-  .voice-img{
+  .voice-img {
     margin-top: 10vh;
   }
-  .e404{
+  .e404 {
     margin-top: 15vh;
   }
 }
 
-@media only screen and (min-width: 1680px){
-  .container{
+@media only screen and (min-width: 1680px) {
+  .container {
     max-width: 70%;
   }
-  .navbar-nav>li>a{
+  .navbar-nav > li > a {
     font-size: 21px !important;
-    margin-top:20px;
+    margin-top: 20px;
   }
-  .navbar-brand{
+  .navbar-brand {
     width: 90px;
   }
-  .about-tag{
+  .about-tag {
     font-size: 19px;
     line-height: 30px;
   }
-  .buttons>a{
+  .buttons > a {
     font-size: 19px;
   }
-  .socials>a{
+  .socials > a {
     font-size: 1.7em;
   }
-  .hero-img{
-    margin-top:15vh;
+  .hero-img {
+    margin-top: 15vh;
   }
-  .about-me{
+  .about-me {
     font-size: 24px;
   }
-  .me-p{
+  .me-p {
     font-size: 19px;
     line-height: 30px;
   }
-  .get-in-touch{
+  .get-in-touch {
     margin-top: 25px;
     font-size: 42px;
   }
-  .project-work-title{
+  .project-work-title {
     font-size: 3.5rem;
   }
-  .project-work-desc{
+  .project-work-desc {
     font-size: 34px;
   }
-  .contact-h1{
+  .contact-h1 {
     margin-top: 15vh;
   }
-  .contact-img{
+  .contact-img {
     margin-top: 17vh;
   }
-  .resume-p{
+  .resume-p {
     font-size: 21px;
   }
-  .resume-div>h1{
+  .resume-div > h1 {
     font-size: 42px;
   }
-  .resume-header>a>small{
+  .resume-header > a > small {
     font-size: 18px;
   }
-  .resume-edu>p{
+  .resume-edu > p {
     font-size: 21px;
   }
-  .work-h1{
+  .work-h1 {
     margin-top: 0;
   }
 }
 
-@media only screen and (min-width :1920px){
-  .hero-tag{
+@media only screen and (min-width: 1920px) {
+  .hero-tag {
     font-size: 5em;
   }
-  .hero-img{
-    margin-top:15vh;
+  .hero-img {
+    margin-top: 15vh;
   }
-  .about-tag,.buttons>a{
+  .about-tag,
+  .buttons > a {
     font-size: 21px;
     line-height: 30px;
   }
-  .socials>a{
+  .socials > a {
     font-size: 2em;
   }
-  .who{
+  .who {
     font-size: 7em;
     margin-top: 13vh;
   }
-  .me-p{
+  .me-p {
     font-size: 21px;
     line-height: 35px;
   }
-  .project-h2{
+  .project-h2 {
     font-size: 36px;
   }
-  .contact-h1{
+  .contact-h1 {
     margin-top: 16vh;
   }
-  .work-h1{
+  .work-h1 {
     margin-top: 0;
   }
-  .project-cat{
+  .project-cat {
     font-size: 32px;
   }
-  input[value="Send"],label,.form-control{
+  input[value="Send"],
+  label,
+  .form-control {
     font-size: 21px;
   }
-  .feedback{
+  .feedback {
     font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width:2560px){
-  .navbar-brand{
+@media only screen and (min-width: 2560px) {
+  .navbar-brand {
     width: 120px;
   }
-  .navbar-nav>li>a{
+  .navbar-nav > li > a {
     font-size: 28px !important;
   }
-  .hero-tag{
+  .hero-tag {
     font-size: 7em;
   }
-  .about-tag{
+  .about-tag {
     font-size: 28px;
     line-height: 40px;
   }
-  .buttons>a{
+  .buttons > a {
     font-size: 28px;
     padding: 15px 20px !important;
   }
-  .socials>a{
+  .socials > a {
     font-size: 3em;
     margin-right: 25px !important;
   }
-  .who{
+  .who {
     font-size: 8em;
     margin-top: 16vh;
   }
-  .about-me{
+  .about-me {
     font-size: 32px;
   }
-  .me-p{
+  .me-p {
     font-size: 28px;
     line-height: 45px;
   }
-  .about-work{
+  .about-work {
     font-size: 3em;
   }
-  .project-h2{
+  .project-h2 {
     font-size: 48px;
   }
-  .project-cat{
+  .project-cat {
     font-size: 42px;
   }
-  .get-in-touch{
+  .get-in-touch {
     font-size: 64px;
   }
-  .project-work-title{
+  .project-work-title {
     font-size: 84px;
   }
-  .project-work-desc{
+  .project-work-desc {
     font-size: 48px;
   }
-  .contact-h1{
+  .contact-h1 {
     font-size: 7em;
   }
-  label,input,input[value="Send"]{
+  label,
+  input,
+  input[value="Send"] {
     font-size: 28px;
   }
-  .feedback{
+  .feedback {
     font-size: 24px;
   }
-  .main-img{
+  .main-img {
     width: 2500px;
   }
 }
-
-
-
