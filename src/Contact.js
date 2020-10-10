@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
     
 const contact = (e) => {
     // TODO : Verify existence of mail id.
-    document.form.action="https://getsimpleform.com/messages?form_api_token=de3f3e206755bfc7b484633b6ab33cff"
     alert(`Thanks for reaching out ${e.target.name.value}! I'll get back to you ASAP!`)
 }
 
@@ -32,8 +31,14 @@ const Contact = () => {
                     <div className="col-lg-6 col-sm-12">
                         <br/>
                         <h1 className="contact-h1">Get in touch</h1>                            
-                        <form name="form" onSubmit={e => contact(e)} className="form" method="post" encType="multipart/form-data">
-                            <input type='hidden' name='_spam' value='message' />
+                        <form
+                         action="https://usebasin.com/f/33c5e2e8a049"
+                         name="form" 
+                         onSubmit={e => contact(e)} 
+                         className="form" 
+                         method="post" 
+                         encType="multipart/form-data">
+                            <input type='hidden' name='phone_number' value='' />
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input type="text" name="name" className="form-control" required/>
